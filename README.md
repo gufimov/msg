@@ -112,4 +112,3 @@ sudo docker run MsgBomberTGBot
 # CONTACT ME:
 
 Feel Free To Open An Issue...
-<p align="center">Mail: sayantandev2018@gmail.com</p>
