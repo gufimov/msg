@@ -19,12 +19,11 @@ except ImportError:
     print('Type \'pip install -r requirements.txt\' to install all required packages')
     exit()
 
-try:
+if bool(os.environ.get("ENV", False)):
+    from config_sample import Config
+else:
     from config import Config
-except ImportError:
-    print("You removed the config file! Exiting now...")
-    exit()
-
+    
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
 
 count_inf = 0

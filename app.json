@@ -1,0 +1,50 @@
+{
+  "name": "TG SMS Bomber",
+  "description": "[MsgBomberTGBot] An open-source SMS bomber bot for Telegram. Inspired by TheSpeedX's Project",
+  "logo": "https://telegra.ph/file/2c8ef3caf31680cc16a83.png",
+  "keywords": [
+    "telegram",
+    "bot",
+    "prank",
+    "fun",
+    "bomber"
+  ],
+  "repository": "https://github.com/noobvishal/MsgBomberTGBot",
+  "website": "https://github.com/noobvishal/MsgBomberTGBot",
+  "success_url": "https://github.com/noobvishal/MsgBomberTGBot",
+  "stack": "container",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "The bot-token which you can get from @Botfather",
+      "required": true
+    },
+    "AUTH_USERS": {
+      "description": "There is no measure to limit who can use this bot, so add userids of users authorized to use this bot",
+      "required": true
+    },
+    "NO_BOMB_NUMS": {
+      "description": "Add numbers below who shouldn't be bombed ever",
+      "required": true
+    },
+    "GOD_USERS": {
+      "description": "Add userids below of users who should have sudo authority over bot, i.e., have no bombing limits",
+      "required": true
+    },
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable VARs when in ENV mode",
+      "value": "ANYTHING"
+      "required": true
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}

@@ -26,9 +26,13 @@ If output looks like `Python 3` - Congrats, Python 3 is installed properly.
 - Frequent updates
 - [Update] Now with the option to stop bombing after bombing has started
 
-## Usage:
+## Deployment:
 
 Run these commands to run the bot
+
+### > For Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ### > For Linux:
 
